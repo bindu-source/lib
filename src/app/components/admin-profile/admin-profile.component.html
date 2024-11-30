@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="prfile-text">
+    <h1>My Profile</h1>
+  </div>
+  <hr>
+    <form [formGroup]="adminProfileForm"  (ngSubmit)="updateProfile()">
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="inputEmail4">Id</label>
+          <input formControlName="userId" type="email" class="form-control" id="inputEmail4" placeholder="Enter Id">
+        </div>
+      </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputEmail4"> First Name</label>
+            <input   formControlName="firstName"  type="email" class="form-control" id="inputEmail4" placeholder="enter first name">
+          </div>    
+        </div>
+
+        <div class="form-row">
+           <div class="form-group col-md-12">
+            <label for="inputPassword4">Last Name</label>
+            <input  formControlName ="lastName"   type="text" class="form-control" id="inputPassword4" placeholder="enter last name">
+           </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-12">
+           <label for="inputPassword4">User Type</label>
+           <input  formControlName ="userType"   type="text" class="form-control" id="inputPassword4"  >
+          </div>
+       </div>
+        
+      <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Password</label>
+            <input   formControlName="password"   type="text" class="form-control" id="inputEmail4" placeholder="enter password">
+          </div>
+        </div>
+        <div class="button">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button  type="submit" class="btn">Update Profile</button>
+        </div> 
+      </form>
+
+</div>

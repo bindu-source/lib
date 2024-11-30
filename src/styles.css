@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+.snackbar-success {
+  background-color: green;
+  color: white;
+}
+
+.snackbar-error {
+  background-color: red;
+  color: white;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-mdc-card-header
+{
+  display: block !important;
+  text-align: center;
+}
+
+.mat-mdc-snack-bar-container .mdc-snackbar__label{
+  background-color:green;
+}
+
+mat-mdc-snack-bar-container .mdc-snackbar__label {
+  color: var(--mdc-snackbar-supporting-text-color);
+}

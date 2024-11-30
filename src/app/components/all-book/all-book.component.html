@@ -1,0 +1,34 @@
+
+<h1 class="text-center">All Books</h1>
+<div class="search-container">
+  <input type="text" placeholder="Search By Title, Author, Keyword" [(ngModel)]="searchTerm" (change)="searchBooks()">
+  <button (click)="searchBooks()">Search</button>
+  <button (click)="resetSearch()">Reset</button>
+</div>
+
+<table >
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Genre</th>
+      <th>Isbn</th>
+      <!-- Add more table headers for other book properties -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of filteredBooks.length ? filteredBooks : books">
+      <td>{{ book.bookId}}</td>
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.genre }}</td>
+      <td>{{book.isbn}}</td>
+      <!-- Add more table data cells for other book properties -->
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="filteredBooks.length === 0 && searchTerm.trim() !== ''">
+  <p>No books found.</p>
+</div>

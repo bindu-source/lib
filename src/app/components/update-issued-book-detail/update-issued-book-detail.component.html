@@ -1,0 +1,51 @@
+
+<div class="book-container">
+    <div class="header"><h1>Update Book Details</h1></div>
+
+    <div class="form">
+       <form   [formGroup]="updateBookForm"   (ngSubmit)="updateBook()">
+           <div class="form-group">
+               <label for="inputId">Book Id</label>
+               <input   formControlName="bookId"   type="number" class="form-control" id="inputID" placeholder="Enter id">
+             </div>
+             <div class="form-group">
+               <label for="inputAddress2">Title</label>
+               <input  formControlName="title"  type="text" class="form-control" id="inputTitle" placeholder="Enter first name">
+             </div>
+           <div class="form-group">
+             <label for="inputAddress">Author</label>
+             <input  formControlName="author"    type="text" class="form-control" id="inputAuthor" placeholder="Enter last name">
+           </div>
+           <div class="form-group">
+             <label for="inputAddress2">ISBN</label>
+             <input  formControlName="isbn"   type="number" class="form-control" id="inputIsbn" placeholder="enter password">
+           </div>
+
+           <div class="form-group">
+               <label for="inputAddress2">Total copies</label>
+               <input   formControlName="totalCopies" type="number" class="form-control" id="inputTotalCopies" placeholder="register as">
+           </div>
+           <div class="form-group">
+            <label for="exampleFormControlSelect1">Select Category</label>
+            <select  formControlName="genre" class="form-control" id="exampleFormControlSelect1">
+              <option value="Technical">Technical</option>
+              <option value="Non Technical">Non Technical</option>
+              <option value="Technical">Religion</option>
+              <option value="Non Technical">Educational</option>
+            </select>
+          </div>
+       <div class="update-button">
+           <button type="submit" class="btn btn-primary">Update</button>
+       </div>
+         </form>
+   
+   
+    </div>
+
+</div>
+
+
+
+
+
+

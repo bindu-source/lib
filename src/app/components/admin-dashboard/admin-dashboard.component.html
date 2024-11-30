@@ -1,0 +1,80 @@
+<!-- navbar -->
+<mat-card >
+  <mat-toolbar class="hi">    
+        <h1>Admin Dashboard</h1>
+        <span class="example-spacer"></span> 
+        <button mat-icon-button [matMenuTriggerFor]="profileMenu" >
+            <mat-icon class="mat-list-icon">account_circle</mat-icon>
+          </button>
+        <mat-menu #profileMenu="matMenu" >
+             <button mat-menu-item  (click)="admin_profile()">Profile</button>
+             <button mat-menu-item  routerLink="/" (click)="logout()">Logout</button>
+        </mat-menu>
+  </mat-toolbar>
+  </mat-card>
+  <!-- sidenavbar -->
+  <div class="main-container">
+    <mat-card class="sidenav">
+        <mat-card-content >
+            <mat-action-list>
+                <button   mat-list-item routerLink="/" class="mdc-list-item__primary-text"  >
+                    <mat-icon   mat-list-icon >home</mat-icon> Home
+                </button>
+                <button mat-list-item (click)="addBook()"> 
+                    <mat-icon mat-list-icon >list</mat-icon>Add Book
+                </button>
+                <button mat-list-item  (click)="allCategory()">
+                    <mat-icon mat-list-icon >list</mat-icon>All  Category Book
+                </button>
+                <!-- <button mat-list-item  (click)="issueBook()">
+                    <mat-icon mat-list-icon  >list</mat-icon> Issue Book
+                </button> -->
+                <button mat-list-item  (click)="allIssueBook()">
+                    <mat-icon mat-list-icon >list</mat-icon>All Issued Book
+                </button>           
+                <button mat-list-item  (click)="allFeedback()">
+                    <mat-icon mat-list-icon >list</mat-icon>All Feedback Report
+                </button>             
+                <button mat-list-item (click)="allReserveBook()" >
+                    <mat-icon mat-list-icon  >list</mat-icon>All Reserve Book
+                </button>
+                <button mat-list-item  (click)="manageFine()">
+                    <mat-icon mat-list-icon >list</mat-icon>Manage Fine
+                </button>   
+            </mat-action-list>
+        </mat-card-content>
+    </mat-card>
+    <div class="container"><router-outlet></router-outlet></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

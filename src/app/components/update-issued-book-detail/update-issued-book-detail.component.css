@@ -1,0 +1,20 @@
+
+
+.header{
+    text-align: center;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form{
+    margin: 2%;
+}
+.update-button{
+    margin-left: 46%;
+    
+}
+
+.book-container{
+    margin-top: 1%;
+    border: 1px solid black;
+    border-radius: 10px;
+}

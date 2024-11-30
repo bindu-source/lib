@@ -1,0 +1,65 @@
+<app-navbar></app-navbar> 
+<div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 id="header">
+          <img id="logo" src="/assets/image/hostel2.png" weight="50%" height="60px" alt="">
+          Library Management System
+        </h2>
+      </div>
+      <div class="col-md">
+        <div class="container h-100">
+          <div class="d-flex justify-content-center h-100">
+            <div class="search">
+              <input class="search_input" type="text" name="" placeholder="Search here...">
+              <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="container mt-5">
+    <form id="form" action="ContactAction" method="post" (submit)="validateForm()">
+      <h5 style="color: green; margin-left: 45px; text-align: center">{{ msg }}</h5>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" id="content">
+            <div class="text-center">
+              <h1>Contact Us <img src="/assets/image/contact.png" alt="" id="galleryicon"></h1>
+              <hr class="w-30 mx-auto" id="hr_line" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <label for="name">Name</label>
+        <input name="name" type="text" class="form-control" id="exampleInputname" placeholder="Enter Name">
+      </div>
+      <div class="form-group mt-3">
+        <label for="exampleInputEmail1">Email address</label>
+        <input name="mailid" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email">
+      </div>
+      <div class="form-group mt-3">
+        <label for="mobileNumber">Mobile No.</label>
+        <input name="mobile" type="text" class="form-control" id="exampleInputMobile"
+          placeholder="Enter Your mobile Number">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea name="msg" class="form-control" id="exampleFormControlTextarea1" placeholder="Enter your message..."
+          rows="3"></textarea>
+      </div>
+      <div class="text-center"> <button type="submit" class="btn btn-primary">Submit</button></div>
+    </form>
+  
+    <div class="col-md-12" id="footer_img">
+      <div class="row" id="img2">
+    </div>
+  
+    <div id="foot">
+      <h5 class="text-center">copyright@2022</h5>
+    </div>
+  </div>
+  

@@ -1,0 +1,47 @@
+<mat-card>
+<mat-toolbar class="header">    
+      <h1 style="color: white;">Employee Dashboard</h1>
+      <span class="example-spacer"></span> 
+      <button mat-icon-button [matMenuTriggerFor]="profileMenu" >
+        <mat-icon class="mat-list-icon">account_circle</mat-icon>
+      </button>
+    <mat-menu #profileMenu="matMenu" >
+         <button mat-menu-item  (click)="profile()" >Profile</button>
+         <button mat-menu-item  (click)="logout()">Logout</button>
+    </mat-menu>
+</mat-toolbar>
+</mat-card>
+
+<div class="main-container">
+    <mat-card class="sidenav">
+        <mat-card-content >
+            <mat-action-list>
+                <button   mat-list-item routerLink="/" class="mdc-list-item__primary-text"  >
+                    <mat-icon   mat-list-icon routerLink="/" >home</mat-icon> Home
+                </button>
+                <button mat-list-item (click)="issuedBook()">
+                    <mat-icon mat-list-icon  routerLinkActive="active">list</mat-icon> All Issued Book
+                </button>
+                <button mat-list-item  (click)="reserveBook()">
+                    <mat-icon mat-list-icon >list</mat-icon>All Reserve Book
+                </button>
+    
+                <button mat-list-item  (click)="requestBook()">
+                    <mat-icon mat-list-icon  >list</mat-icon>Book Request
+                </button>
+                <button mat-list-item (click)="allbook()">
+                    <mat-icon mat-list-icon >list</mat-icon>All Books
+                </button>
+                <button mat-list-item (click)="changePassword()">
+                    <mat-icon mat-list-icon >list</mat-icon>Change Password
+                </button>
+               
+            </mat-action-list>
+        </mat-card-content>
+    </mat-card>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+

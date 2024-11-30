@@ -1,0 +1,35 @@
+
+<div  class="category-container">
+  <mat-card-header><mat-card-title class="hi"><h1>All Books </h1></mat-card-title></mat-card-header>
+  <div class="table-conatiner">
+    <table>
+      <thead>
+        <tr>
+          <th>Book Id</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th>Total cpoies</th>
+          <th>Select Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{ book.bookId}}</td>
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{book.isbn}}</td>
+          <td>{{book.totalCopies}}</td>
+          <td>{{ book.genre }}</td>     
+          <td><mat-icon class="up" (click)="updateBook(book.bookId)">update</mat-icon><mat-icon class="white-icon" (click)="deleteBook(book.bookId)">delete</mat-icon></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    
+
+
+</div>
+
+

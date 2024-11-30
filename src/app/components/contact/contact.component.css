@@ -1,0 +1,217 @@
+/* Styles for the header */
+#header {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+#logo{
+  margin: 5px 10px;
+  height: 60px;
+  width: 70px;
+  border-bottom: 3px solid black;
+ 
+  
+}
+
+.search_icon{
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:white;
+  background-color:black;
+ margin-top:3px;
+ margin-right:3px;
+  }
+  .search{
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 5px;
+    
+    height: 50px;
+    /* background-color: rgb(243, 6, 6); */
+/*        border:2px solid red;*/
+    box-shadow: inset 0 0 5px #77b2c4;
+    border-radius: 40px;
+    padding: 0px;
+    width: 700px;
+    }
+    .search:hover{
+        border: 2px solid black
+    }
+
+    .search_input{
+    color: black;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    margin-top:5px;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .search .search_input{
+    padding: 0 10px;
+    width: 300px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+    
+    .search:hover > .search_icon{
+    background: red;
+    color: #fff;
+    }
+    
+
+    .search_icon{
+    height: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    background-color:black;
+   margin-top:3px;
+   margin-right:3px;
+    }
+
+
+.search_input {
+  padding: 5px;
+}
+
+/* Styles for the success message */
+#success-msg {
+  color: green;
+  text-align: center;
+}
+
+/* Styles for the contact form */
+#content {
+  padding: 20px;
+}
+
+#hr_line {
+  background-color: #333;
+  height: 2px;
+}
+
+/* Styles for the footer section */
+#footer_img {
+  padding: 20px;
+  text-align: center;
+}
+
+#contactfont {
+  color: #333;
+}
+
+#img2 {
+  margin-top: 20px;
+}
+
+#img2 a {
+  margin: 0 10px;
+}
+
+#foot {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+#footer_img {
+  background-color: rgb(46, 46, 46);
+  width: 100%;
+  height: auto;
+  
+  color: rgb(54, 37, 235);
+ 
+
+}
+#img2{
+  margin-left: 260px;
+}
+
+a img {
+  border-radius: 12px;
+  margin:20px;
+  margin-bottom: 20px;
+  transition-duration: 300ms;
+  flex-wrap: wrap;
+  display: list-item; 
+  
+
+}
+
+a img:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 400ms;
+}
+
+#foot{
+  background-color:  yellow;
+  
+}
+
+#submit{
+  margin-top:5px;
+  color: rgb(234, 234, 234);
+}
+input,select,textarea{
+  border-radius: 10px;
+  background-color: rgb(224, 239, 243);
+}
+button:hover{
+ 
+  background-color: red;
+  border-radius: 20px;
+  box-shadow: 12px 12px 10px rgb(4, 4, 4);
+  
+}
+
+.bgimg{
+  min-height: 100vh; 
+   
+  background-image: url('https://assets.weforum.org/article/image/responsive_big_webp_vXNOvlQMaIrdyRBp0-1ku9wZJ7nLZq8kVkjHKEhsxKU.webp');
+
+
+}
+
+#table1{
+  margin-top: 2px;
+  border-collapse: collapse;
+}
+.card{
+  width: 300px;
+  height: 250px;
+}
+.card-img-top{
+  height: 200px;
+}
+#form{
+  border: 1px solid gray;
+  padding: 10px;
+   
+  
+}
+
+.boysimg{
+  height: 280px;
+  width: 450px;
+}
+
+#galleryicon{
+  width: 65px;
+  height: 55px;
+}
+.carousel{
+  position: relative;
+}

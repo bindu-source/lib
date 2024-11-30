@@ -1,0 +1,28 @@
+
+<div class="issued-book-container">
+  <mat-card-header><mat-card-title class="hi"><h1>All Issued Book </h1></mat-card-title></mat-card-header>
+  <div class="table-conatiner">
+    <table>
+      <thead>
+        <tr>
+          <th>S.no</th>
+          <th>Employee Id</th>
+          <th>Book Id</th>
+          <th>From Date</th>
+          <th>To Date</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let r of issuedBook">
+         <td>{{r.userBookId}}</td>
+         <td>{{r.userId}}</td>
+         <td>{{r.bookId}}</td>
+         <td>{{r.borrowingDate | date: 'dd/MM/yyyy'}}</td>
+         <td>{{r.dueDate | date: 'dd/MM/yyyy' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

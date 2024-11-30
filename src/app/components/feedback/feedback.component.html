@@ -1,0 +1,84 @@
+<app-navbar></app-navbar>
+<!-- signup.component.html -->
+<h1 class="text-center">Feedback</h1>
+<form action="RegisterAction" method="post">
+  <div class="container px-1 px-lg-1 px-xl-5 mt-4 mx-auto">
+    <div class="card card0 border-0">
+      <div class="row d-flex">
+        <div class="col-lg-6">
+          <div class="card1 pb-2">
+            <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
+              <img
+                src="https://images.unsplash.com/photo-1552581234-26160f608093?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHN1cnZleXxlbnwwfHwwfHx8MA%3D%3D"
+                class="image mt-5" style="height: 50vh">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card2 card border-0 py-2">
+
+            <div class="row px-3 mb-2">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Name</h6>
+              </label>
+              <input class="mb-3" type="text" name="uid" placeholder="Enter your Name" required />
+            </div>
+            <div class="row px-3 mb-2">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Phone</h6>
+              </label>
+              <input class="mb-3" type="number" name="phone" placeholder="Enter your Phone no" required />
+            </div>
+            <div class="row px-3 mb-2">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Email Address</h6>
+              </label>
+              <input class="mb-3 " type="email" name="emailID" placeholder="Email" required />
+            </div>
+
+            <div class="form-group px-1 mb-2">
+              <label class="mb-2 mt-2">
+                <h6 class="mb-0 text-sm">Rating</h6>
+              </label>
+              <select name="regBy" class="form-control" id="exampleFormControlSelect1" required>
+                <option value="Select">Select..</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+
+              </select>
+            </div>
+            <div class="row px-4 mb-3">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Feedback</h6>
+              </label>
+              <input class="mb-4 " type="email" name="emailID" placeholder="Enter your Feedback Message" required />
+            </div>
+
+            <div class="row mb-3 px-3">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback-form-confirm-popup">
+        <div class="popup-content">
+          <h2>Thank you for your feedback!</h2>
+          <p>Your feedback has been submitted and will be reviewed by our team.</p>
+          <button (click)="submitFeedback()">Close</button>
+        </div>
+      </div>
+      <div class="bg-blue">
+        <div class="row px-3">
+          <small class="ml-4 ml-sm-5 mb-2"></small>
+          <div class="social-contact ml-4 ml-sm-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+
